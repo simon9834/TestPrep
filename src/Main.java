@@ -11,13 +11,18 @@ public class Main {
         tr.addPokemon(pu);
         System.out.println(tr.returnList("vodní"));
         */
+        /*
         Soubory sb = new Soubory();
         try{
             sb.writeToFile("C:/java/zapad.txt.txt","C:/java/zapadOut.txt.txt");
         }catch (IOException e){
             System.out.println("bruh");
         }
-
-
+         */
+        Autoservis as = new Autoservis();
+        as.arAdd("Škoda" , "Superb");
+        as.objToFile("Auto.txt");
+        as.fileToObj("Auto.txt");
+        System.out.println(as.checkAr());
     }
 }
